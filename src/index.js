@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // CSS
 import './assets/css/App.css';
+import './assets/css/Mobile.css';
 // Compo
 import Header from './components/Header';
 import Footer from './components/Footer';

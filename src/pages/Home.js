@@ -6,13 +6,14 @@ export default class Home extends Component {
       <div className="App-home PageContent card">
         <h2>Hello this is Home</h2>
         <div className="row">
-          <div className="column col4 sidebar">
-            <ul>
-              <li><a href="#one">Paragraphe 1</a></li>
-              <li><a href="#two">Paragraphe 2</a></li>
-              <li><a href="#three">Paragraphe 3</a></li>
-              <li><a href="#four">Paragraphe 4</a></li>
-              <li><a href="#five">Paragraphe 5</a></li>
+          <div className="column col4 sided">
+            <h4>Chapters</h4>
+            <ul className="sidebar">
+              <li><a href="#one">Paragraph 1</a></li>
+              <li><a href="#two">Paragraph 2</a></li>
+              <li><a href="#three">Paragraph 3</a></li>
+              <li><a href="#four">Paragraph 4</a></li>
+              <li><a href="#five">Paragraph 5</a></li>
             </ul>
           </div>
           <div className="column col8 thisContent">

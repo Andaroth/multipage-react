@@ -5,14 +5,7 @@ export default class More extends Component {
     return (
       <div className="App-notfound PageContent card">
         <h2>Hello this is 404</h2>
-        <div className="row">
-          <div className="column col6">
-            <p>Moitié</p>
-          </div>
-          <div className="column col6">
-            <p>Moitié</p>
-          </div>
-        </div>
+        <p>The page you asked for cannot be found, you should try to <a href="./">get back home</a></p>
       </div>
     );
   }

@@ -1,37 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-
+// CSS
+import './assets/css/App.css';
+import './assets/css/Mobile.css';
+// Compo
+import Header from './components/Header';
+import Footer from './components/Footer';
 // Pages
-import Home from './Home.js';
-import More from './More.js';
-import NotFound from './NotFound.js';
+import Home from './pages/Home';
+import More from './pages/More';
+import NotFound from './pages/NotFound';
 // Rooter
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 const Root = () => {
 	return (
 		<Router>
       <div>
-        <header>
-          <h1>Axel Fiolle</h1>
-          <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/More">More</Link></li>
-            <li><Link to="/NotFound">NotFound</Link></li>
-          </ul>
-          </nav>
-        </header>
+        <Header />
         <Switch>
           <Route exact path='/' component={ Home } />
           <Route exact path='/More' component={ More } />
           <Route component={ NotFound } />
         </Switch>
-        <footer>
-          <p>&copy; Axel Fiolle</p>
-        </footer>
+        <Footer />
       </div>
     </Router>
 	)

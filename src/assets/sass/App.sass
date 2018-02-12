@@ -49,6 +49,12 @@ header
     text-align: center
     font-size: 2em
     border-bottom: 1px solid grey
+  h4
+    margin: 0
+  p
+    width: 100%
+    max-width: 400px
+    margin: 10px auto
   .thisContent
     line-height: 140%
     font-size: 1.2em
@@ -68,10 +74,10 @@ header
   flex-direction: column
   float: left
   padding: 10px
-  &:first-child
-    border-right: 1px solid grey
   > *
     display: block
+.sided
+  border-right: 1px solid grey
 .col4
   width: 33%
 .col6
@@ -82,6 +88,18 @@ header
   background: #000
   border-radius: 0 15px 0 15px
   border-right: 0
+  padding: 20px 0
+  li
+    margin-bottom: 10px
+    a
+      display: block
+      color: black
+      text-align: center
+      padding: 10px
+      background: rgba(255,255,255,.7)
+      text-decoration: none
+      &:hover
+        background: orange
 footer
   display: block
   clear: both

@@ -1,6 +1,8 @@
 # Multipage-React
 
-An Axel Fiolle's exercice to improve he's React skillz.
+An exercice I made to improve my React skills.  
+
+I used `react-router-dom` to enable content routing. 
 
 ## Project
 

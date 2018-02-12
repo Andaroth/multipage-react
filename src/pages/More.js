@@ -8,7 +8,7 @@ export default class More extends Component {
         <h2>Hello this is More</h2>
         <div className="row">
           <div className="column col6 sided">
-            <img src={logo} alt="Placeholder picture"></img>
+            <img src={logo} alt="Placeholder"></img>
           </div>
           <div className="column col6">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet tincidunt nibh, at tincidunt odio vestibulum cursus. Quisque sed ornare turpis, eget efficitur diam. Fusce vulputate, est non cursus pharetra, ante est volutpat enim, et rhoncus ipsum ex eget velit. Cras scelerisque fermentum ante, at consequat mi ultricies at. Vestibulum condimentum, neque eget eleifend molestie, leo sem commodo libero, eu imperdiet sapien metus eu sapien. Sed est mauris, rutrum ut augue eget, suscipit porta velit. Etiam tristique malesuada ex, et sollicitudin turpis posuere sed. Aenean sit amet convallis velit. </p>

@@ -5,22 +5,22 @@ export default class AllFooter extends Component {
   render() {
     return (
       <div className="Footer">
-        <Footer copyrights="&copy 2015 Copyright Text"
+        <Footer copyrights="&copy; 2018 Axel Fiolle"
           moreLinks={
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a className="grey-text text-lighten-4 right" href="https://axelfiolle.be/">Developer's website</a>
           }
           links={
             <ul>
-              <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a className="grey-text text-lighten-3" href="https://puissance.space/">Puissance.Space</a></li>
+              <li><a className="grey-text text-lighten-3" href="http://agenceduweb.be/">Agence Du Web</a></li>
+              <li><a className="grey-text text-lighten-3" href="http://smartentrepreneuriat.com/">SmartEntrepreneuriat</a></li>
+              
             </ul>
           }
           className='example'
         >
-            <h5 className="white-text">Footer Content</h5>
-            <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <h5 className="white-text">This website</h5>
+            <p className="grey-text text-lighten-4">This website is made with Materialize and React.</p>
         </Footer>
       </div>
     );

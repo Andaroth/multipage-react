@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/react.svg';
+import mat from '../assets/img/materialize.svg';
 import { Row, Col, Parallax } from 'react-materialize';
 import paralOne from '../assets/img/keyb.jpg';
 
@@ -10,16 +11,20 @@ export default class More extends Component {
         <Parallax imageSrc={paralOne} />
         <div className="container">
           <Row>
-            <Col className="offset-m6">
-              <h2>Hello this is More</h2>
+            <Col m={12}>
+              <h2>About this website</h2>
             </Col>
             <Col s={12} m={6}>
-              <img src={logo} alt="Placeholder"></img>
+              <p>This website has been created with React. <br/>It is really useful to create web applications easily and as fast as thunder. </p>
             </Col>
             <Col s={12} m={6}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet tincidunt nibh, at tincidunt odio vestibulum cursus. Quisque sed ornare turpis, eget efficitur diam. Fusce vulputate, est non cursus pharetra, ante est volutpat enim, et rhoncus ipsum ex eget velit. Cras scelerisque fermentum ante, at consequat mi ultricies at. Vestibulum condimentum, neque eget eleifend molestie, leo sem commodo libero, eu imperdiet sapien metus eu sapien. Sed est mauris, rutrum ut augue eget, suscipit porta velit. Etiam tristique malesuada ex, et sollicitudin turpis posuere sed. Aenean sit amet convallis velit. </p>
-              <p>Pellentesque maximus elit at purus imperdiet, eu laoreet felis imperdiet. Nullam tincidunt dignissim ullamcorper. Donec id lacus ac est eleifend mollis. Nulla sed justo eget nulla semper maximus et sed eros. Maecenas pellentesque erat at nibh porta, et posuere purus condimentum. Suspendisse ut lacus ac erat dapibus placerat vitae sit amet est. Morbi feugiat urna sit amet tellus imperdiet blandit. Ut id porttitor dui, vel molestie arcu. Nulla sapien sapien, volutpat eget mattis ut, dignissim dignissim justo. Nunc tincidunt sagittis auctor. Donec luctus mauris quis iaculis tincidunt. Nulla id quam sit amet libero faucibus commodo. Praesent auctor quam vitae turpis bibendum efficitur. Donec tincidunt, orci ac imperdiet pretium, lacus lacus venenatis est, eget vulputate ante ex non velit. Donec quis ipsum aliquet, vestibulum urna ac, tristique ipsum. Donec gravida justo eget felis pellentesque hendrerit. </p>
+              <p>I also used React-Materialize so I don't need to make the whole project's CSS. </p>
             </Col>
+          </Row>
+          <p>Point of this project is to improve my skills in ReactJS and handling Materialize. I made my own jQ functions and my own CSS selectors. Styles are input in SASS because I like to work with it. </p>
+          <Row>
+            <Col s={6}><img src={logo} alt="Placeholder"></img></Col>
+            <Col s={6}><img src={mat} alt="Placeholder"></img></Col>
           </Row>
         </div>
       </div>

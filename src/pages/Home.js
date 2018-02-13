@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Parallax } from 'react-materialize';
+import { Row, Col, Parallax, CollectionItem } from 'react-materialize';
 import paralOne from '../assets/img/easy.jpg';
 
 export default class Home extends Component {
@@ -13,23 +13,22 @@ export default class Home extends Component {
               <h2 >Hello this is Home</h2>
             </Col>
             <Col s={12} m={4}>
-              <ul className="card pink p-20">
-                <h4>Chapters</h4>
-                <li><a href="#one">Paragraph 1</a></li>
-                <li><a href="#two">Paragraph 2</a></li>
-                <li><a href="#three">Paragraph 3</a></li>
-                <li><a href="#four">Paragraph 4</a></li>
-                <li><a href="#five">Paragraph 5</a></li>
-              </ul>
+              <div className="collection" id="homeCollection">
+                <CollectionItem href='#one'>Welcome</CollectionItem>
+                <CollectionItem href='#two'>Who I am</CollectionItem>
+                <CollectionItem href='#three'>What I do</CollectionItem>
+                <CollectionItem href='#four'>Sit</CollectionItem>
+                <CollectionItem href='#five'>Amet</CollectionItem>
+              </div>
             </Col>
             <Col s={12} m={8}>
-              <h3 id="one" className="scrollspy">Lorem</h3>
-              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet tincidunt nibh, at tincidunt odio vestibulum cursus. Quisque sed ornare turpis, eget efficitur diam. Fusce vulputate, est non cursus pharetra, ante est volutpat enim, et rhoncus ipsum ex eget velit. Cras scelerisque fermentum ante, at consequat mi ultricies at. Vestibulum condimentum, neque eget eleifend molestie, leo sem commodo libero, eu imperdiet sapien metus eu sapien. Sed est mauris, rutrum ut augue eget, suscipit porta velit. Etiam tristique malesuada ex, et sollicitudin turpis posuere sed. Aenean sit amet convallis velit. </p>
-              <h3 id="two" className="scrollspy">Ipsum</h3>
-              <p>Etiam egestas semper nisi. Sed dolor ante, elementum non neque faucibus, posuere consectetur sapien. Vestibulum lacinia, velit et feugiat posuere, sapien mauris pellentesque enim, a pretium lacus neque sed tortor. Cras quis commodo leo. Suspendisse tincidunt, felis ut elementum luctus, mi tellus cursus est, eget condimentum purus justo quis justo. Ut nec ultrices dolor. Cras tempus eros id ex consectetur, sit amet dignissim arcu scelerisque. Nulla facilisi. </p>
-              <h3 id="three" className="scrollspy">Dolor</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisl sed risus hendrerit, at consequat orci ullamcorper. Sed tempus nisl sit amet augue pharetra, vitae facilisis quam pretium. Nam sit amet nisl ut magna commodo tincidunt eget eu purus. Cras sed metus id tortor placerat cursus. Donec suscipit nec est vel posuere. Ut suscipit sodales dolor, vel fermentum lacus lacinia ut. Nulla mauris quam, maximus ac risus sed, laoreet dapibus ipsum. Nunc tempor eu ex eu elementum. Integer sollicitudin dapibus aliquet. Suspendisse quis elit ante. Morbi placerat volutpat maximus.</p>
-              <h3 id="fout" className="scrollspy">Sit</h3>
+              <h3 id="one" className="scrollspy">Welcome</h3>
+              <p>Welcome on this no-point website. My name is <strong>Axel Fiolle</strong>, aka <strong>Andaroth</strong>. <br/>This exists because I really needed to train myself with <strong>React</strong> as I need to improve my skills for internship purpose. </p>
+              <h3 id="two" className="scrollspy">Who I am</h3>
+              <p>I'm a young web developer. I'm 25 and I know coding since I'm like 12. <br/>I started coding because I wanted to discover more stuff about computering and I wanted to make my own games. <br/>I first discover RPG Maker. Then RPG Maker XP which allowed us to edit project's scripts in <strong>Ruby</strong>RGSS3. Then I grew a big interest for programmation. I started <strong>C/C++</strong> at first but it was too complicated and I was lazy. <br/>After years, all this made me become a <strong>web-oriented full-stack developer</strong>. </p>
+              <h3 id="three" className="scrollspy">What I do</h3>
+              <p>I mostly like to code front-end stuff. I spent years and years discovering barely all the HTML(5 now) and CSS(3) possibilites. I recently started to learn React so I'll be able to create web applications. This page is an exemple of what I can actually do in React right now with my present skills. </p>
+              <h3 id="four" className="scrollspy">Sit</h3>
               <p>Duis laoreet lacus sem, non laoreet lorem tempus non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque maximus est cursus feugiat fermentum. Morbi aliquam sit amet massa id varius. Pellentesque elementum vitae ligula id rutrum. Suspendisse pulvinar ipsum dolor, eu bibendum odio commodo a. Sed semper sapien sed turpis venenatis posuere. Suspendisse potenti. Fusce venenatis dui eget viverra porttitor. Sed semper, arcu in consectetur sodales, nisl sem varius sapien, in egestas tellus ante vitae leo. Aliquam sit amet porta erat. Maecenas cursus ultrices tellus a convallis. </p>
               <h3 id="five" className="scrollspy">Amet</h3>
               <p>Pellentesque maximus elit at purus imperdiet, eu laoreet felis imperdiet. Nullam tincidunt dignissim ullamcorper. Donec id lacus ac est eleifend mollis. Nulla sed justo eget nulla semper maximus et sed eros. Maecenas pellentesque erat at nibh porta, et posuere purus condimentum. Suspendisse ut lacus ac erat dapibus placerat vitae sit amet est. Morbi feugiat urna sit amet tellus imperdiet blandit. Ut id porttitor dui, vel molestie arcu. Nulla sapien sapien, volutpat eget mattis ut, dignissim dignissim justo. Nunc tincidunt sagittis auctor. Donec luctus mauris quis iaculis tincidunt. Nulla id quam sit amet libero faucibus commodo. Praesent auctor quam vitae turpis bibendum efficitur. Donec tincidunt, orci ac imperdiet pretium, lacus lacus venenatis est, eget vulputate ante ex non velit. Donec quis ipsum aliquet, vestibulum urna ac, tristique ipsum. Donec gravida justo eget felis pellentesque hendrerit. </p>

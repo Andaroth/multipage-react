@@ -1,5 +1,5 @@
 {
-  "name": "test-b",
+  "name": "multipagereact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,5 +20,5 @@
   "devDependencies": {
     "gh-pages": "^1.1.0"
   },
-  "homepage": "http://andaroth.github.io/multipage-react"
+  "homepage": "https://andaroth.github.io/multipage-react"
 }

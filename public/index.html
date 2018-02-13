@@ -4,37 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>A React website</title>
+    <!-- Import Google Icon Font -->
+    <link href="%PUBLIC_URL%/materialize/font.css" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link href="%PUBLIC_URL%/materialize/materialize.css" rel="stylesheet">
+    <title>Multi Page in React made by Axel Andaroth</title>
   </head>
   <body>
     <noscript>
-      You need to enable JavaScript to run this app.
+      <div style="display:block;margin:20px auto;max-width:600px;text-align:center;border:1px solid lightgrey;border-radius:7px;box-shadow:0 2px 3px grey;">
+        <h1>Axel Fiolle</h1>
+        <hr style="border:.5px solid lightgrey;">
+        <img src="%PUBLIC_URL%/react.svg" height="100" alt="Made with ReactJS">
+        <p>This app is made with ReactJS, <strong style="font-weight:bold;">you must enable JavaScript</strong> ! <br/>Maybe you should retry with a more recent browser.</p>
+        <p>Here's two browsers that support JavaScript : </p>
+        <a style="display:inline-block;background:#e50303;color:white;padding:15px;border-radius:5px;max-width:30%;margin:10px auto;" href="https://www.mozilla.org/firefox/" target="_blank">Download Firefox !</a>
+        <a style="display:inline-block;background:#039be5;color:white;padding:15px;border-radius:5px;max-width:30%;margin:10px auto;" href="https://www.google.com/chrome/" target="_blank">Download Chrome !</a>
+        <hr style="border:.5px solid lightgrey;">
+        <p>Once you're done, or right now, you can also <a href="https://axelfiolle.be/" target="_blank">visit my website</a> !</p>
+      </div>
     </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="allcontent">
+    </div>
+    <!-- Import jQuery before materialize.js -->
+    <script src="%PUBLIC_URL%/jquery211/jquery.js"></script>
+    <script src="%PUBLIC_URL%/materialize/materialize.js"></script>
+    <!-- And then your bundled js -->
+    <script src="%PUBLIC_URL%/materialize/materializeapp.js"></script>
   </body>
 </html>

@@ -1,2 +1,2 @@
-@media screen and (max-width: 600px){.row{flex-direction:column}.column{width:100% !important}.sided{border-right:0 !important}p{width:80%;max-width:0}}
+@media screen and (max-width: 600px){body{padding-top:53px}.screenfixed{position:initial;min-width:0}}@media screen and (max-width: 992px){.screenfixed{min-width:0}}
 /*# sourceMappingURL=Mobile.css.map */

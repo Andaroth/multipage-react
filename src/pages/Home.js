@@ -1,33 +1,88 @@
 import React, { Component } from 'react';
+import { Row, Col, Parallax, CollectionItem, Collapsible, CollapsibleItem, Button } from 'react-materialize';
+import react from '../assets/img/react.svg';
+import materialize from '../assets/img/materialize.svg';
+import paralOne from '../assets/img/easy.jpg';
+import bubbleGum from '../assets/img/gum.jpg';
 
 export default class Home extends Component {
   render() {
     return (
-      <div className="App-home PageContent card">
-        <h2>Hello this is Home</h2>
-        <div className="row">
-          <div className="column col4 sided">
-            <h4>Chapters</h4>
-            <ul className="sidebar">
-              <li><a href="#one">Paragraph 1</a></li>
-              <li><a href="#two">Paragraph 2</a></li>
-              <li><a href="#three">Paragraph 3</a></li>
-              <li><a href="#four">Paragraph 4</a></li>
-              <li><a href="#five">Paragraph 5</a></li>
-            </ul>
-          </div>
-          <div className="column col8 thisContent">
-            <h3>Lorem</h3>
-            <p id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet tincidunt nibh, at tincidunt odio vestibulum cursus. Quisque sed ornare turpis, eget efficitur diam. Fusce vulputate, est non cursus pharetra, ante est volutpat enim, et rhoncus ipsum ex eget velit. Cras scelerisque fermentum ante, at consequat mi ultricies at. Vestibulum condimentum, neque eget eleifend molestie, leo sem commodo libero, eu imperdiet sapien metus eu sapien. Sed est mauris, rutrum ut augue eget, suscipit porta velit. Etiam tristique malesuada ex, et sollicitudin turpis posuere sed. Aenean sit amet convallis velit. </p>
-            <h3>Ipsum</h3>
-            <p id="two">Etiam egestas semper nisi. Sed dolor ante, elementum non neque faucibus, posuere consectetur sapien. Vestibulum lacinia, velit et feugiat posuere, sapien mauris pellentesque enim, a pretium lacus neque sed tortor. Cras quis commodo leo. Suspendisse tincidunt, felis ut elementum luctus, mi tellus cursus est, eget condimentum purus justo quis justo. Ut nec ultrices dolor. Cras tempus eros id ex consectetur, sit amet dignissim arcu scelerisque. Nulla facilisi. </p>
-            <h3>Dolor</h3>
-            <p id="three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisl sed risus hendrerit, at consequat orci ullamcorper. Sed tempus nisl sit amet augue pharetra, vitae facilisis quam pretium. Nam sit amet nisl ut magna commodo tincidunt eget eu purus. Cras sed metus id tortor placerat cursus. Donec suscipit nec est vel posuere. Ut suscipit sodales dolor, vel fermentum lacus lacinia ut. Nulla mauris quam, maximus ac risus sed, laoreet dapibus ipsum. Nunc tempor eu ex eu elementum. Integer sollicitudin dapibus aliquet. Suspendisse quis elit ante. Morbi placerat volutpat maximus.</p>
-            <h3>Sit</h3>
-            <p id="four">Duis laoreet lacus sem, non laoreet lorem tempus non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque maximus est cursus feugiat fermentum. Morbi aliquam sit amet massa id varius. Pellentesque elementum vitae ligula id rutrum. Suspendisse pulvinar ipsum dolor, eu bibendum odio commodo a. Sed semper sapien sed turpis venenatis posuere. Suspendisse potenti. Fusce venenatis dui eget viverra porttitor. Sed semper, arcu in consectetur sodales, nisl sem varius sapien, in egestas tellus ante vitae leo. Aliquam sit amet porta erat. Maecenas cursus ultrices tellus a convallis. </p>
-            <h3>Amet</h3>
-            <p id="five">Pellentesque maximus elit at purus imperdiet, eu laoreet felis imperdiet. Nullam tincidunt dignissim ullamcorper. Donec id lacus ac est eleifend mollis. Nulla sed justo eget nulla semper maximus et sed eros. Maecenas pellentesque erat at nibh porta, et posuere purus condimentum. Suspendisse ut lacus ac erat dapibus placerat vitae sit amet est. Morbi feugiat urna sit amet tellus imperdiet blandit. Ut id porttitor dui, vel molestie arcu. Nulla sapien sapien, volutpat eget mattis ut, dignissim dignissim justo. Nunc tincidunt sagittis auctor. Donec luctus mauris quis iaculis tincidunt. Nulla id quam sit amet libero faucibus commodo. Praesent auctor quam vitae turpis bibendum efficitur. Donec tincidunt, orci ac imperdiet pretium, lacus lacus venenatis est, eget vulputate ante ex non velit. Donec quis ipsum aliquet, vestibulum urna ac, tristique ipsum. Donec gravida justo eget felis pellentesque hendrerit. </p>
-          </div>
+      <div className="App-home">
+        <Parallax imageSrc={paralOne} />
+        <Row className="container">
+          <Col className="offset-m4">
+            <h2>Hello this is Home</h2>
+          </Col>
+          <Col s={12} m={4}>
+            <div className="collection" id="homeCollection">
+              <CollectionItem href='#one'>Welcome</CollectionItem>
+              <CollectionItem href='#two'>Who I am</CollectionItem>
+              <CollectionItem href='#three'>What I do</CollectionItem>
+              <CollectionItem href='#four'>My skills' story</CollectionItem>
+            </div>
+          </Col>
+          <Col s={12} m={8}>
+            <section id="one" className="scrollspy">
+              <h3>Welcome</h3>
+              <p>Welcome on this no-point website. My name is <strong>Axel Fiolle</strong>, aka <strong>Andaroth</strong>. <br/>This exists because I really needed to train myself with <strong>React</strong> as I need to improve my skills for internship purpose. </p>
+            </section>
+            <section id="two" className="scrollspy">
+              <h3>Who I am</h3>
+              <p>I'm a young web developer. I'm 25 and I know coding since I'm like 12. <br/>I started coding because I wanted to discover more stuff about computering and I wanted to make my own games. <br/>I first discover RPG Maker. Then RPG Maker XP which allowed us to edit project's scripts in <strong>Ruby</strong>RGSS3. Then I grew a big interest for programmation. I started <strong>C/C++</strong> at first but it was too complicated and I was lazy. <br/>After years, all this made me become a <strong>web-oriented full-stack developer</strong>. </p>
+            </section>
+            <section id="three" className="scrollspy">
+              <h3>What I do</h3>
+              <p>I mostly like to code front-end stuff. I spent years and years discovering barely all the HTML(5 now) and CSS(3) possibilites. I recently started to learn React so I'll be able to create web applications. This page is an exemple of what I can actually do in React right now with my present skills. </p>
+            </section>
+            <section id="four" className="scrollspy">
+              <h3>My skills' story</h3>
+              <Collapsible popout defaultActiveKey={0}>
+                <CollapsibleItem header='HTML5/CSS3' icon='polymer'>
+                  <p>I wrote my first HTML line when I was very young, around twelve years old. I used a software named Nvu which allowed me to do What-You-See-Is-What-You-Get early and learn HTML/CSS basics from it.</p>
+                  <p>I began to code seriously later with SiteDuZero (which became OpenClassroom). I also discovered PHP but it's another story. </p>
+                  <p>Serious job began when I was at <strong>High School Albert Jacquard</strong> where I learnt <strong>HTML5</strong> and <strong>CSS3</strong>. </p>
+                  <p>Now I'm barely a master in HTML5 and CSS3. When I work without any framework, my code is always 100% valid with the <strong>W3C</strong> Internet's standard.</p>
+                </CollapsibleItem>
+                <CollapsibleItem header='JavaScript &amp; jQuery' icon='movie_filter'>
+                  <p>I started to make my first own JS lines when I was at High School. We discovered it mostly with jQuery but I learnt to do vanilla JavaScript too. </p>
+                  <p>I must admit that I like coding with jQuery more than JS because it allows me to focus on the action itself instead of the process which. (I'm still a front-end hearted developer)</p>
+                </CollapsibleItem>
+                <CollapsibleItem header='PHP' icon='settings_ethernet'>
+                  <p>I discovered PHP years ago, I made a blogroll by myself when I was like fourteen. <br/>I always kept working in PHP even in front-end because I liked to include components this way. </p>
+                  <p>Now I'm seriously training to work with <strong>MVC</strong> architecture.</p>
+                </CollapsibleItem>
+                <CollapsibleItem header='NodeJS' icon='share'>
+                  <p>I really like NodeJS, I love how it works. It's like making it's own Apache, it's own SMTP, it's own everything. <br/>I started learning NodeJS at BeCode in Bruxelles. </p>
+                  <p>I trained my Node skills making http servers, webchats, stuff like that.</p>
+                </CollapsibleItem>
+                <CollapsibleItem header='Symfony' icon='folder_special'>
+                  <p>I love it. This is the best way to work with PHP. <br/>I really feel like it totally fits with the way I was working before discovering it, making my own MVC architecture. </p>
+                  <p>I discovered it recently because I needed it for an internship. I kept working with it. </p>
+                </CollapsibleItem>
+                <CollapsibleItem header='React' icon='blur_circular'>
+                  <p>This is a great framework. This website is made in React. </p>
+                  <img src={bubbleGum} alt="Placeholder" width="50%" />
+                </CollapsibleItem>
+              </Collapsible>
+            </section>
+          </Col>
+        </Row>
+        <div className="orange">
+          <Row id="stopper" className="container center-align p-20 mb-0">
+            <h2>This project</h2>
+            <Col s={12} m={6} className="center-align">
+              <img src={react} alt="React" width="50%" height="100"/>
+              <p>Made with ReactJS</p>
+            </Col>
+            <Col s={12} m={6} className="center-align">
+              <img src={materialize} alt="Materialize" width="50%" height="100"/>
+              <p>And with MaterializeCSS</p>
+            </Col>
+            <Col m={12} className="mt-20">
+              <Button href="./About" waves="light" node="a">Learn more about this project</Button>
+            </Col>
+          </Row>
         </div>
       </div>
     );

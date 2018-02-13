@@ -19,7 +19,7 @@ export default class More extends Component {
               <p>I also used <strong>React-Materialize</strong> so I don't need to make the whole project's CSS. </p>
               <p>I finally installed the <strong>gh-pages</strong> package so I can deploy the website online.</p>
               <p>If you want to talk about it, you should try sending me an email :</p>
-              <Button href="mailto:contact@axelfiolle.be" waves="light" node="a">Contact me</Button> or <Button href="./" waves="light" node="a">Return to homepage</Button>
+              <Button href="mailto:contact@axelfiolle.be" waves="light" node="a">Contact me</Button> or <a href="./">Return to homepage</a>
             </Col>
             <Col s={12} m={6}>
               <img src={logo} alt="Placeholder"></img>

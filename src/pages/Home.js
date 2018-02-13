@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Parallax, CollectionItem, Collapsible, CollapsibleItem, Icon, Button } from 'react-materialize';
+import { Row, Col, Parallax, CollectionItem, Collapsible, CollapsibleItem, Button } from 'react-materialize';
 import react from '../assets/img/react.svg';
 import materialize from '../assets/img/materialize.svg';
 import paralOne from '../assets/img/easy.jpg';

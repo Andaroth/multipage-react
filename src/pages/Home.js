@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'react-materialize';
 
 export default class Home extends Component {
   render() {
     return (
-      <div className="App-home PageContent card">
+      <div className="App-home container">
         <h2>Hello this is Home</h2>
-        <div className="row">
-          <div className="column col4 sided">
-            <h4>Chapters</h4>
-            <ul className="sidebar">
+        <Row>
+          <Col s={4}>
+            <ul className="card pink p-20">
+              <h4>Chapters</h4>
               <li><a href="#one">Paragraph 1</a></li>
               <li><a href="#two">Paragraph 2</a></li>
               <li><a href="#three">Paragraph 3</a></li>
               <li><a href="#four">Paragraph 4</a></li>
               <li><a href="#five">Paragraph 5</a></li>
             </ul>
-          </div>
-          <div className="column col8 thisContent">
+          </Col>
+          <Col s={8}>
             <h3>Lorem</h3>
             <p id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet tincidunt nibh, at tincidunt odio vestibulum cursus. Quisque sed ornare turpis, eget efficitur diam. Fusce vulputate, est non cursus pharetra, ante est volutpat enim, et rhoncus ipsum ex eget velit. Cras scelerisque fermentum ante, at consequat mi ultricies at. Vestibulum condimentum, neque eget eleifend molestie, leo sem commodo libero, eu imperdiet sapien metus eu sapien. Sed est mauris, rutrum ut augue eget, suscipit porta velit. Etiam tristique malesuada ex, et sollicitudin turpis posuere sed. Aenean sit amet convallis velit. </p>
             <h3>Ipsum</h3>
@@ -27,8 +28,8 @@ export default class Home extends Component {
             <p id="four">Duis laoreet lacus sem, non laoreet lorem tempus non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque maximus est cursus feugiat fermentum. Morbi aliquam sit amet massa id varius. Pellentesque elementum vitae ligula id rutrum. Suspendisse pulvinar ipsum dolor, eu bibendum odio commodo a. Sed semper sapien sed turpis venenatis posuere. Suspendisse potenti. Fusce venenatis dui eget viverra porttitor. Sed semper, arcu in consectetur sodales, nisl sem varius sapien, in egestas tellus ante vitae leo. Aliquam sit amet porta erat. Maecenas cursus ultrices tellus a convallis. </p>
             <h3>Amet</h3>
             <p id="five">Pellentesque maximus elit at purus imperdiet, eu laoreet felis imperdiet. Nullam tincidunt dignissim ullamcorper. Donec id lacus ac est eleifend mollis. Nulla sed justo eget nulla semper maximus et sed eros. Maecenas pellentesque erat at nibh porta, et posuere purus condimentum. Suspendisse ut lacus ac erat dapibus placerat vitae sit amet est. Morbi feugiat urna sit amet tellus imperdiet blandit. Ut id porttitor dui, vel molestie arcu. Nulla sapien sapien, volutpat eget mattis ut, dignissim dignissim justo. Nunc tincidunt sagittis auctor. Donec luctus mauris quis iaculis tincidunt. Nulla id quam sit amet libero faucibus commodo. Praesent auctor quam vitae turpis bibendum efficitur. Donec tincidunt, orci ac imperdiet pretium, lacus lacus venenatis est, eget vulputate ante ex non velit. Donec quis ipsum aliquet, vestibulum urna ac, tristique ipsum. Donec gravida justo eget felis pellentesque hendrerit. </p>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     );
   }

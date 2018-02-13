@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,oCAAoC,CAClC,IAAI,CACF,cAAc,CAAE,MAAM,CACxB,OAAO,CACL,KAAK,CAAE,eAAe,CACxB,MAAM,CACJ,YAAY,CAAE,YAAY,CAC5B,CAAC,CACC,KAAK,CAAE,GAAG,CACV,SAAS,CAAE,CAAC",
-"sources": ["../sass/Mobile.sass"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "Mobile.css"
 }

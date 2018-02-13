@@ -8,7 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
-import More from './pages/More';
+import About from './pages/About';
 import NotFound from './pages/NotFound';
 // Rooter
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -21,7 +21,7 @@ const Root = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={ Home } />
-          <Route exact path='/More' component={ More } />
+          <Route exact path='/About' component={ About } />
           <Route component={ NotFound } />
         </Switch>
         <Footer />

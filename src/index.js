@@ -16,14 +16,16 @@ import registerServiceWorker from './registerServiceWorker';
 
 const Root = () => {
 	return (
-		<Router>
-      <Header />
-      <Switch>
-        <Route exact path='/' component={ Home } />
-        <Route exact path='/About' component={ About } />
-        <Route component={ NotFound } />
-      </Switch>
-      <Footer />
+		<Router basename="/multipage-react">
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={ Home } />
+          <Route exact path='/About' component={ About } />
+          <Route component={ NotFound } />
+        </Switch>
+        <Footer />
+      </div>
     </Router>
 	)
 }

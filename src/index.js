@@ -17,15 +17,13 @@ import registerServiceWorker from './registerServiceWorker';
 const Root = () => {
 	return (
 		<Router>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={ Home } />
-          <Route exact path='/About' component={ About } />
-          <Route component={ NotFound } />
-        </Switch>
-        <Footer />
-      </div>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={ Home } />
+        <Route exact path='/About' component={ About } />
+        <Route component={ NotFound } />
+      </Switch>
+      <Footer />
     </Router>
 	)
 }

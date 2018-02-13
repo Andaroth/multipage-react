@@ -7,7 +7,7 @@ $(document).scroll(function(){
     let scrollTop = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
     if (
         (scrollTop >= (elempos.top-50)) &&
-        (scrollTop <= (stoppos.top-230))
+        (scrollTop <= (stoppos.top-260))
     ) { 
         $elem.addClass('screenfixed'); 
     } 

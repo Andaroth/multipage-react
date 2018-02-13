@@ -4,7 +4,7 @@ import {Navbar,NavItem,Icon} from 'react-materialize';
 export default class Header extends Component {
   render() {
     return (
-      <div className="Header">
+      <div className="topbar">
         <Navbar className="deep-purple" right>
           <NavItem href="./">Home</NavItem>
           <NavItem href="./About">About</NavItem>

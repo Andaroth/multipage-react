@@ -9,13 +9,14 @@ export default class More extends Component {
     return (
       <div className="App-notfound">
         <Parallax imageSrc={paralOne} />
-        <div className="container">
-          <div className="card center-align">
-            <h2>Hello this is 404</h2>
-            <p>The page you asked for cannot be found, you should try to <a href="./">get back home</a></p>
-            <a href="./"><img src={materialize} alt="Placeholder"/></a>
+        <main className="container">
+          <div className="center-align">
+            <h1>Hello this is 404</h1>
+            <p>The page you asked for cannot be found, you can try to <a href="./">get back to the homepage</a>. </p>
+            <p>You can also click on the picture below, it does the same thing but it looks funny.</p>
+            <a href="./" className="m-20 woosh"><img src={materialize} alt="Placeholder" height="150"/></a>
           </div>
-        </div>
+        </main>
       </div>
     );
   }

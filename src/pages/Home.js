@@ -40,16 +40,16 @@ export default class Home extends Component {
               <Collapsible popout defaultActiveKey={0}>
                 <CollapsibleItem header='HTML5/CSS3' icon='polymer'>
                   <p>I wrote my first HTML line when I was very young, around twelve years old. I used a software named Nvu which allowed me to do What-You-See-Is-What-You-Get early and learn HTML/CSS basics from it.</p>
-                  <p>I began to code seriously later with SiteDuZero (which became OpenClassroom). I also discovered PHP but it's another story. </p>
-                  <p>Serious job began when I was at <strong>High School Albert Jacquard</strong> where I learnt <strong>HTML5</strong> and <strong>CSS3</strong>. </p>
-                  <p>Now I'm barely a master in HTML5 and CSS3. When I work without any framework, my code is always 100% valid with the <strong>W3C</strong> Internet's standard.</p>
+                  <p>I decided to learn coding seriously later with SiteDuZero (which became OpenClassroom). I also discovered PHP but it's another story. </p>
+                  <p>Serious business started when I was at <strong>High School Albert Jacquard</strong> where I learnt <strong>HTML5</strong> and <strong>CSS3</strong>. </p>
+                  <p>Now I'm barely a master in HTML5 and CSS3. When I work without any framework, my code is always 100% valid with the <strong>W3C</strong>'s standards.</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='JavaScript &amp; jQuery' icon='movie_filter'>
                   <p>I started to make my first own JS lines when I was at High School. We discovered it mostly with jQuery but I learnt to do vanilla JavaScript too. </p>
-                  <p>I must admit that I like coding with jQuery more than JS because it allows me to focus on the action itself instead of the process which. (I'm still a front-end hearted developer)</p>
+                  <p>I must admit that I like coding with jQuery more than JS because it allows me to focus on the action itself instead of the process hidden behind. (Yes I'm still a front-end hearted developer)</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='PHP' icon='settings_ethernet'>
-                  <p>I discovered PHP years ago, I made a blogroll by myself when I was like fourteen. <br/>I always kept working in PHP even in front-end because I liked to include components this way. </p>
+                  <p>I discovered PHP years ago, I made a blogroll (with a backend to post new stuff with a form, very nice) by myself when I was like fourteen. <br/>I always kept working in PHP even in front-end because I liked to include components this way. </p>
                   <p>Now I'm seriously training to work with <strong>MVC</strong> architecture.</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='NodeJS' icon='share'>
@@ -58,7 +58,7 @@ export default class Home extends Component {
                 </CollapsibleItem>
                 <CollapsibleItem header='Symfony' icon='folder_special'>
                   <p>I love it. This is the best way to work with PHP. <br/>I really feel like it totally fits with the way I was working before discovering it, making my own MVC architecture. </p>
-                  <p>I discovered it recently because I needed it for an internship. I kept working with it. </p>
+                  <p>I discovered it recently because I needed it for an internship. I keet working with it because it rules. </p>
                 </CollapsibleItem>
                 <CollapsibleItem header='React' icon='blur_circular'>
                   <p>This is a great framework. This website is made in React. </p>

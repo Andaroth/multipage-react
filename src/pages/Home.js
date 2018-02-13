@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
+import TechnoBanner from '../components/TechnoBanner';
 import { Row, Col, Parallax, CollectionItem, Collapsible, CollapsibleItem, Button } from 'react-materialize';
-import react from '../assets/img/react.svg';
-import materialize from '../assets/img/materialize.svg';
-import gitlogo from '../assets/img/git.png';
 import paralOne from '../assets/img/easy.jpg';
 import bubbleGum from '../assets/img/gum.jpg';
 
@@ -11,6 +9,9 @@ export default class Home extends Component {
     return (
       <main className="App-home">
         <Parallax imageSrc={paralOne} />
+        <div className="titlesection amber center-align m-0">
+          <a href="#one" className="white-text"><h1><span className="hidden">Discover </span>My first React website</h1></a>
+        </div>
         <Row className="container">
           <Col s={12} m={4}>
             <h2 className="hidden">Chapters</h2>
@@ -23,7 +24,6 @@ export default class Home extends Component {
             </div>
           </Col>
           <Col node="main" s={12} m={8}>
-            <h1>My first React website</h1>
             <section id="one" className="scrollspy">
               <h3>Welcome</h3>
               <p>Welcome on this no-point website. My name is <strong>Axel Fiolle</strong>, aka <strong>Andaroth</strong>. <br/>This exists because I really needed to train myself with <strong>React</strong> as I need to improve my skills for internship purpose. </p>
@@ -74,32 +74,7 @@ export default class Home extends Component {
             </section>
           </Col>
         </Row>
-        <section id="five" className="scrollspy orange">
-          <Row id="stopper" className="container center-align p-20 mb-0">
-            <h2>Techno<span className="nomobile">logie</span>s</h2>
-            <Col s={12} m={4} className="center-align">
-              <a href="https://github.com/facebook/create-react-app" className="black-text">
-                <img src={react} alt="React" width="50%" height="100"/>
-                <p>Made with <strong>ReactJS</strong></p>
-              </a>
-            </Col>
-            <Col s={12} m={4} className="center-align">
-              <a href="https://github.com/react-materialize/react-materialize" className="black-text">
-                <img src={materialize} alt="Materialize" width="50%" height="100"/>
-                <p>Also with <strong>MaterializeCSS</strong></p>
-              </a>
-            </Col>
-            <Col s={12} m={4} className="center-align">
-              <a href="https://github.com/gitname/react-gh-pages" className="black-text">
-                <img src={gitlogo} alt="Materialize" width="50%" height="100"/>
-                <p>And with <strong>react-gh-pages</strong></p>
-              </a>
-            </Col>
-            <Col m={12} className="mt-20">
-              <Button href="./About" waves="light" node="a">About this project</Button>
-            </Col>
-          </Row>
-        </section>
+        <TechnoBanner />
       </main>
     );
   }

@@ -17,7 +17,7 @@ export default class AllFooter extends Component {
               
             </ul>
           }
-          className='example'
+          className="deep-purple darken-3"
         >
             <h5 className="white-text">This website</h5>
             <p className="grey-text text-lighten-4">This website is made with Materialize and React.</p>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col, Button } from 'react-materialize';
+import { Row, Col, 
+    Button } from 'react-materialize';
 import react from '../assets/img/react.svg';
 import materialize from '../assets/img/materialize.svg';
 import gitlogo from '../assets/img/git.png';

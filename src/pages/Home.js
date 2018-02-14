@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import TechnoBanner from '../components/TechnoBanner';
-import { Row, Col, Parallax, CollectionItem, Collapsible, CollapsibleItem, Button } from 'react-materialize';
+import { 
+  Row, Col, 
+  Parallax, CollectionItem, 
+  Collapsible, CollapsibleItem, 
+  Button } from 'react-materialize';
 import paralOne from '../assets/img/easy.jpg';
 import bubbleGum from '../assets/img/gum.jpg';
 

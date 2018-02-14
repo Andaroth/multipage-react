@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../assets/img/react.svg';
-import { Row, Col, Parallax, Button } from 'react-materialize';
+import { 
+  Row, Col, 
+  Parallax, 
+  Button } from 'react-materialize';
 import paralOne from '../assets/img/keyb.jpg';
 
 export default class More extends Component {
